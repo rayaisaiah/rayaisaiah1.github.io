@@ -4,9 +4,7 @@ $(function () {
         VERSION = "v1";
         
         Backendless.initApp(APPLICATION_ID, SECRET_KEY, VERSION);
-        
-        
-        
+         
         var postsCollection = Backendless.Persistence.of(Posts).find();
         
         console.log(postsCollection);
