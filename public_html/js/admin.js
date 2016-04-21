@@ -4,11 +4,7 @@ $(function () {
         VERSION = "v1";
        
    Backendless.initApp(APPLICATION_ID, SECRET_KEY, VERSION);
-   
-   var user = new Backendless.User();
-   user.email = "rayaisaiah@gmail.com";
-   user.password = "Mittens12345";
-   Backendless.UserService.register(user);
+
    
     if(Backendless.UserService.isValidLogin()) {
         userLoggedIn(Backendless.LocalCache.get("current-user-id"));

@@ -18,17 +18,15 @@
     <body>
         <header>
             <nav>
-                <div class="nav-wrapper blue">
-                    <a href="#" class="brand-logo">Todo List!</a>
-                    <ul class="right">
+                <div class="row blue">
+                    <div class="col s12"><a href="#" class="brand-logo">Todo List!</a></div>
+                    <div class="col s6"><ul class="right">
                        
                             <li><a href="index.html">Home<span class="badge"></span></a></li>
+                        </ul></div>
+                    <div class="col s6 right"><ul class="right-bottom">
                         <li><a href="admin.html">Admin<span class="badge"></span></a></li>
-                        <!--<li><a href="aboutme.html">About The Author<span class="badge"></span></a></li>
-                        <!--<li><a href="indexeasy.html">Snake<span class="badge">1</span></a></li>
-                        <li><a href="http://wiki.theappacademy.us/index.php?title=MiniBlog">App Academy<span class="badge">1</span></a></li>-->
-                        
-                   
+                        </ul></div>
                 </div>
                 
             </nav>
@@ -46,21 +44,7 @@
                 </div>
             </div>
              
-         <div class="divider"></div>
-  <div class="section">
-    <h5>Section 1</h5>
-    <p>Stuff</p>
-  </div>
-  <div class="divider"></div>
-  <div class="section">
-    <h5>Section 2</h5>
-    <p>Stuff</p>
-  </div>
-  <div class="divider"></div>
-  <div class="section">
-    <h5>Section 3</h5>
-    <p>Stuff</p>
-  </div>
+   
           
         </main>
         <footer class="page-footer blue">
@@ -80,7 +64,12 @@
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>
       <script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
-      
+           <div class="divider"></div>
+  
+    
+   
+ 
+ 
       <script class="center-align" id="blogs-template" type="text/x-handlebars-template">
           {{#each posts}}
           <div class="blog-post">
@@ -89,12 +78,10 @@
               <div>{{{content}}}</div>
           </div>
           {{/each}}
-                  
-                  
+            
       </script>
     
 
-          
       
     </body>
   </html>
