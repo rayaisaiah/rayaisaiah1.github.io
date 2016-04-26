@@ -74,15 +74,16 @@
  
       <script class="center-align" id="blogs-template" type="text/x-handlebars-template">
           {{#each posts}}
-          
+           
           <div class="blog-post">
           <div class="chip">
-          <i class="material-icons">done</i>
           <i class="material-icons">close</i>
+          <i class="material-icons" >done</i>
+   
               <h2 class="blog-post-title"">{{title}}</h2>
               <p class="blog-post-meta">At {{format created}} by {{authorEmail}}</p>
               <div>{{{content}}}</div>
-   
+           
           </div>
   
   </div>
