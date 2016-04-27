@@ -29,7 +29,7 @@ $(function () {
        var addBlogTemplate = Handlebars.compile(addBlogScript);
 
        $('.main-container').html(addBlogTemplate);
-      
+      tinymce.init({selector: 'textarea'})
    });
    $(document).on('submit', '.form-add-blog', function (event) {
        event.preventDefault();
