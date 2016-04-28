@@ -31,5 +31,8 @@ function Posts(args){
     this.content = args.content || "";
     this.authorEmail = args.authorEmail || "";
 }
-
+$(document).on('click', '.deleteA',function (event){
+   Backendless.Persistence.of(Posts).remove(event.target.attributes.data.nodeValue);
+   location.reload();
+});
 
