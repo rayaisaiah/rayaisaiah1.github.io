@@ -39,7 +39,7 @@ $(function () {
                content = data[1].value;
 
        if (content === "" || title === "") {
-           Materialize.toast('Empty title and statement', 4000);
+           Materialize.toast('Empty title or statement!', 4000);
        }
        else {
            var dataStore = Backendless.Persistence.of(Posts);

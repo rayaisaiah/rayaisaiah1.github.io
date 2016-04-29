@@ -33,8 +33,8 @@ function Posts(args){
 }
 $(document).on('click', '.deleteA',function (event){
    Backendless.Persistence.of(Posts).remove(event.target.attributes.data.nodeValue);
-   Materialize.toast('Deleted!', 15000)
-   location.reload();
+   Materialize.toast('Deleted!', 10000)
+   
    
 });
 
