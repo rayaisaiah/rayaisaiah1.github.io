@@ -33,14 +33,14 @@ function Posts(args){
 }
 $(document).on('click', '.deleteA',function (event){
    Backendless.Persistence.of(Posts).remove(event.target.attributes.data.nodeValue);
-   Materialize.toast('Deleted!', 10000)
+   Materialize.toast('Deleted!', 2000)
    
    
 });
 
 $(document).on('click', '.check',function (event){
    
-   Materialize.toast('Task Complete!', 10000)
+   Materialize.toast('Task Complete!', 2000)
 });
 
 
