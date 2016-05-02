@@ -12,6 +12,7 @@ $(function () {
        var loginTemplate = Handlebars.compile(loginScript);
        $('.main-container').html(loginTemplate);
    }
+ 
 
 
    $(document).on('submit', '.form-signin', function (event) {
@@ -89,6 +90,7 @@ function userLoggedIn(user) {
    var welcomeScript = $('#welcome-template').html();
   var welcomeTemplate = Handlebars.compile(welcomeScript);
    var welcomeHTML = welcomeTemplate(userData);
+ 
 
    $('.main-container').html(welcomeHTML);
 }
