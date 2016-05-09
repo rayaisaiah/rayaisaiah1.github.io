@@ -1,0 +1,56 @@
+
+body  {
+    margin: 0;
+    padding: 0;
+}
+
+#game-screen {
+    display: block;
+}
+
+#gameOver, #playHUD {
+    position: absolute;
+    visibility: hidden;
+}
+
+h1, h3 {
+    font-family: 'Press Start 2P', cursive;
+    color : white;
+    text-align: center;
+}
+
+.title {
+    font-size: 80px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    color : white;
+    text-align: center;
+}
+
+#restartButton {
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+#restartButton:hover {
+    background-color: #000000;
+}
+
+#scoreboard {
+    margin: 0px;
+}
+
+
+
+
+
+
+
